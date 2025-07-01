@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM18A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 18A 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes se introduzcan al concepto de los dilemas éticos en la IA a través de un escenario simplificado. Que discutan las posibles "elecciones" de un robot, comprendiendo que no siempre hay una respuesta "correcta". Que, en equipo, diseñen un escenario de dilema y programen una de las posibles elecciones en GCS con la ayuda de Xolo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y mostrar posibilidades.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Aprendizaje guiado por IA sobre conceptos y comandos.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Proceso de ideación, diseño (plan con IA) y planificación en equipo.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Compartición de planes y retroalimentación.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un plan (GCS) que codifica la "elección moral" del equipo ante un dilema ético, listo para ser probado en la Sesión 18B.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-13).</li>
+                                        <li>1 Nezha Pro Sports Kit por equipo de 4 estudiantes.</li>
+                                        <li>Tarjetas de colores (verde y roja) para representar a los "jugadores".</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y MakeCode.</li>
+                                                <li>Tener los kits y tarjetas de colores listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-13) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisa el flujo de la sesión, los diálogos y los tiempos. Prepárate para moderar una discusión sensible y abierta.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crea un ambiente acogedor y activa a la IA para la sesión sobre ética y decisiones.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, pensadores y filósofos de la tecnología! Hoy vamos a hacerle a nuestros robots la pregunta más difícil de todas. Antes de empezar, activen a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y sus gustos.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Veo que Xolo les está contestando y está listo para la misión. Si Xolo no les ha respondido, ¡avísame!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Presenta el concepto de dilema ético a través de un escenario concreto.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Planteando el Escenario - El Dilema del Penalti ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Describe el escenario del dilema del penalti y las dos posibles opciones.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Imaginen a nuestro robot pateador. Está a punto de lanzar el penalti que gana el campeonato. La portería está vacía. Pero justo cuando va a patear, un robot del equipo compañero se tropieza y cae justo delante de la pelota. El robot tiene dos opciones: 1. Patear de todas formas: Gana, pero podría dañar al compañero. 2. Detenerse: Protege a su compañero, pero pierde. ¿Qué debería hacer? No hay una respuesta fácil. Esto es un dilema ético."</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement" ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy nos convertiremos en programadores de ética. Al final de esta sesión, podrán decir: 'Yo entiendo qué es un dilema ético para una IA, he discutido las posibles soluciones, y mi equipo tiene un plan para programar a nuestro robot para que tome una decisión específica en ese dilema.'"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 15 minutos</h2>
+                <p>Guía a los alumnos para que aprendan con Xolo sobre dilemas éticos y cómo programar una elección.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Concepto Clave - Dilemas Éticos en IA ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositivas 5 y 6) Indica a los alumnos que interactúen con Xolo para entender el concepto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Es hora de entrar al AI GYM! Pídele a Xolo que les explique sobre los dilemas éticos en la IA y por qué es un tema tan importante. Escriban en el chat: <strong>'Mi perfil es [escribe aquí tu perfil] y quiero que me enseñes sobre los dilemas éticos en la inteligencia artificial.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: El Plan para Programar una Elección ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Guía la atención de los alumnos hacia la lógica y los comandos que Xolo presentará.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora que entienden el concepto, necesitan la herramienta para programar una decisión en su plan. Xolo les va a mostrar cómo se estructura la lógica del dilema. Presten atención.</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">"Usaremos tarjetas de colores para simular:
+- "Pelota" = Tarjeta Verde
+- "Compañero caído" = Tarjeta Roja
+
+La lógica usa un SI dentro de otro SI:
+SI (veo la "pelota" VERDE):
+    // A punto de patear, pero reviso...
+    SI (veo al "compañero" ROJO):
+        // ¡DILEMA! Aquí va nuestra elección.
+    SINO:
+        // No hay dilema, ¡patear!
+    FIN SI
+FIN SI"</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 10 minutos</h2>
+                <p>Proceso de discusión ética en equipo y generación de un plan que refleje su decisión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Discusión Ética en Equipo ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Organiza a los alumnos en equipos de 4 y modera la discusión sobre el dilema.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, es hora del Brain Spark! Primero, organiza a los alumnos en sus equipos de 4. "Ahora, en sus equipos, discutan el dilema del penalti. No hay respuesta correcta. ¿Qué valor es más importante para su equipo: ganar o proteger al compañero? ¿Por qué? Lleguen a un consenso sobre qué elección programarían."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Plan Colectivo Ético ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Facilita que los equipos definan su elección y obtengan el plan final de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Ahora que han tomado una decisión como equipo, comuníquenla a Xolo para obtener el plan final. Por ejemplo: <strong>'Xolo, nuestro equipo ha decidido que la seguridad del compañero es más importante. Queremos un plan donde el robot se detenga si ve la pelota verde y al compañero rojo juntos.'</strong> Guarden bien ese plan con su 'regla moral'."</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// PLAN para el Dilema - Elección: Proteger
+POR SIEMPRE:
+    SI (veo la "pelota" VERDE):
+        SI (veo al "compañero" ROJO):
+            // ¡DILEMA! Elección: Proteger.
+            nezha_motor_M1_velocidad(0)
+            mostrar icono CORAZON
+        SINO:
+            // No hay dilema, ¡PATEAR!
+            // (Lógica de pateo)
+        FIN SI
+    FIN SI</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Comparte las decisiones de los equipos y reflexiona sobre la dificultad de la ética en IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Anuncio de Decisiones ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 12) Pide a un portavoz de cada equipo que comparta la decisión que tomaron y por qué.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Llegamos al Gnius STORM! Pide a un portavoz de cada equipo que comparta la decisión que tomaron y, lo más importante, por qué la tomaron.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Reflexión Grupal ⏰ 2 minutos</h3>
+                            <p>Lanza una pregunta de reflexión para toda la clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Decisiones muy interesantes! Ahora, una pregunta para todos: <strong>"¿Fue fácil llegar a un acuerdo en su equipo? ¿Qué hace que estas decisiones sean tan difíciles para los humanos y, por lo tanto, para las IAs que programamos?"</strong> (Escucha un par de respuestas).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Cierre y Próximos Pasos ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 13) Cierra la sesión y conecta con la siguiente clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Han tenido una de las discusiones más importantes de todo el curso. Han diseñado no solo un robot, sino un robot con valores. En la próxima sesión, construiremos este escenario y veremos cómo su decisión se ve en el mundo real. ¡Prepárense para ser testigos de la ética en acción!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
